@@ -401,7 +401,7 @@ static void gf_kernel_key_input(struct gf_dev *gf_dev, struct gf_key *gf_key)
 	uint32_t key_input = 0;
 
 	if (gf_key->key == GF_KEY_HOME) {
-		key_input = KEY_KPENTER;
+		return;
 	} else if (gf_key->key == GF_KEY_POWER) {
 		key_input = KEY_KPENTER;
 	} else if (gf_key->key == GF_KEY_CAMERA) {
